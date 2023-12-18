@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3242/3242257.png">
+
+
+  <title>myPortfolio</title>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <header class="headerport" id="header">
+      <h1 style="margin: 20px; color: antiquewhite;">Portfolio</h1>
+
+
+
+      <div class="headsideItem">
+        <div class="theme-switch-wrapper">
+
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" onclick="darkTheme()">
+            <div class="slider round"></div>
+          </label>
+          <em>Dark</em>
+        </div>
+        <input type="button" id="myCheck" onclick="myFunction()">
+        <label for="myCheck" class="checkbtn" id="checkbtn">
+          <i class="fa fa-bars"></i>
+        </label>
+
+
+      </div>
+    </header>
+
+    <aside id="aside">
+      <input type="button" id="myChecks" onclick="myFunctionn()">
+      <label for="myChecks" class="checkbtnn" id="checkbtnn">
+        <i class="fa-solid fa-xmark"></i>
+      </label>
+
+      <ul>
+        <li onclick="window.location.reload(true)"><i class="fa-solid fa-house" style="color: #fafafa;"></i><a
+            href="#home"> Home</a></li>
+        <li><i class="fa-solid fa-arrow-trend-up" style="color: #edeae8;"></i><a href="https://www.simplilearn.com/best-programming-languages-start-learning-today-article" target="_blank"> Trending</a></li>
+        <li><i class="fa-solid fa-video" style="color: #fafafa;"></i><a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAblfum5WiQblKPwIbqYXkDoC" target="_blank"></i> Video</a></li>
+      </ul>
+      <h2 style="text-align: left; margin: 10px; color: rgb(118, 187, 247);">Socials</h2>
+      <ul>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" width="20px"><a href="https://www.instagram.com/ms_ansarii_/" target="_blank">Instagram</a></li>
+        <li><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20px" style="
+          filter: drop-shadow(10px 10px 0px 20px white);
+          background-color: white;
+          border-radius: 50%;
+          border: 1px solid rgb(255, 255, 255);"><a href="https://github.com/talhaansari692" target="_blank">Github</a>
+        </li>
+        <li><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" width="20px">
+          <a href="www.linkedin.com/in/mohd-talha-ansari-051747238" target="_blank">LinkedIn</a></li>
+      </ul>
+    </aside>
+    <script src="script.js"></script>
+
+    <p class="alert">SORRY CAN'T OPEN THIS IN LESS THAN 345px SCREEN SIZE/VIEWPORT</p>
+    <div id="home"></div>
+
+    <main id="main">
+      <div class="profile">
+        <div class="face_img">
+          <img src="talhaport.png" alt="">
+        </div>
+        <div class="insta">
+          <h1>Mohd Talha Ansari</h1>
+          <h2>Front-End Developer</h2>
+          <h4><i class="fa-regular fa-envelope fa-beat" style="color: #fafafa;"></i><a
+              href="https://talhaansari692@gmail.com" target="_blank">talhaansari692@gmail.com</a></h3>
+            <h4><i class="fa-brands fa-instagram fa-beat" style="color: #fcfcfc;"></i><a href="https://www.instagram.com/ms_ansarii_/" target="_blank">@ms_ansarii_</a></h4>
+            <div id="about"></div>
+
+        </div>
+      </div>
+      <section class="projects">
+        <div class="heading">
+          <div class="heading_top flex">
+            <div class="line"></div>
+            <div class="line line2"></div>
+            <i class="fas fa-circle"></i>
+            <h3 style="font-size: xx-large;"> Projects </h3>
+          </div>
+          <div class="heading_bottom">
+            <h2><span>Web Applications</span></h2>
+          </div>
+          <div class="pro_container">
+            <a href="https://github.com/talhaansari692" target="_blank" class="probox"><div>Face Recognition system</div></a>
+            <a href="https://github.com/talhaansari692" target="_blank" class="probox"><div>Weather Forecast App</div></a>
+            <a href="https://github.com/talhaansari692" target="_blank" class="probox"><div>TO-DO list App</div></a>
+            <a href="https://github.com/talhaansari692" target="_blank" class="probox"><div>Calculator</div></a>
+            <a href="https://github.com/talhaansari692" target="_blank" class="probox"><div>Login Page</div></a>
+          </div>
+        </div>
+      </section>
+      <section class="about mtop background2">
+        <div class="container flex">
+          <div class="left">
+            <div class="dots">
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+
+            <div class="content mtop">
+              <div class="items flex mtop">
+                <!-- <div class="box">
+                  <div class="number">
+                    <h5>90+</h5>
+                  </div>
+                  <div class="text">
+                    <h3>Happy Clients</h3>
+                  </div>
+                </div> -->
+                <div class="box">
+                  <div class="number">
+                    <h5>04+</h5>
+                  </div>
+                  <div class="text">
+                    <h3>Projects Done</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="items flex mtop">
+                <div class="box">
+                  <div class="number">
+                    <h5>02+</h5>
+                  </div>
+                  <div class="text">
+                    <h3>Projects Progresss</h3>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="number">
+                    <h5>14+</h5>
+                  </div>
+                  <div class="text">
+                    <h3>Working Hours</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="heading">
+              <div class="heading_top flex">
+                <div class="line"></div>
+                <div class="line line2"></div>
+                <i class="fas fa-circle"></i>
+                <h3> About Me </h3>
+              </div>
+              <div class="heading_bottom">
+                <h2><span>Unleash Your Creativity</span></h2>
+              </div>
+              <h4>As a recent graduate with a degree in computer science, I'm excited to launch my career in software
+                development.</h4>
+            </div>
+            <p>
+
+              During my studies, I gained hands-on experience in programming languages such as Java, as well as web
+              development technologies like HTML, CSS,JavaScript and React.js.
+              <br><br>
+              I'm a fast learner with a passion for problem-solving, and I'm always eager to take on new challenges. I'm
+              seeking a role where I can apply my skills and contribute to the development of innovative software
+              solutions. Let's connect and discuss how I can add value to your team.
+            </p>
+            <div id="service"></div>
+             <a href="images/mohd talha (1).pdf" download><button class="btn2 btn3">Download CV</button></a>
+
+          </div>
+        </div>
+      </section>
+      <section class="services mtop">
+        <div class="container">
+          <div class="heading heading2">
+            <div class="heading_top flex">
+              <div class="line"></div>
+              <div class="line line2"></div>
+              <i class="fas fa-circle"></i>
+              <h3> My Services</h3>
+            </div>
+            <div class="heading_bottom">
+              <h2><span>What Can I Do Best ?</span></h2>
+            </div>
+          </div>
+
+
+          <div class="content grid top">
+            <div class="box">
+              <div class="img">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/web.png" />
+              </div>
+              <div class="text">
+                <h3>Website Design</h3>
+                <hr>
+                <p>Web design is the creation of websites and pages to reflect a company's brand and information and
+                  ensure a user-friendly experience.</p>
+              </div>
+            </div>
+            <!-- <div class="box">
+              <div class="img">
+                <img src="https://img.icons8.com/ios/50/ffffff/venn-diagram.png" />
+              </div>
+              <div class="text">
+                <h3>Brand Identity </h3>
+                <hr>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div> -->
+            <div class="box">
+              <div class="img">
+                <img src="https://img.icons8.com/ios-glyphs/60/ffffff/design.png" />
+              </div>
+              <div class="text">
+                <h3>Logo Design (Canva)</h3>
+                <hr>
+                <p>A logo is a symbol or design used to identify a company or organization, as well as its products,
+                  services, employees, etc.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <img src="https://img.icons8.com/dotty/80/ffffff/broken-phone.png" />
+              </div>
+              <div class="text">
+                <h3>Mobile App Design </h3>
+                <hr>
+                <p> Mobile app design is the task of designing mobile applications. Even though mobile apps have a wide
+                  variety of uses, what unifies them is the need for optimal usability, accessibility, engagement, and
+                  overall user experience.</p>
+              </div>
+              <div id="skills"></div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <section class="skills mtop background2">
+        <div class="container flex">
+          <div class="left">
+            <div class="heading">
+              <div class="heading_top flex">
+                <div class="line"></div>
+                <div class="line line2"></div>
+                <i class="fas fa-circle"></i>
+                <h3> Expertise</h3>
+              </div>
+              <div class="heading_bottom">
+                <h2><span>My Skills </span></h2>
+              </div>
+            </div>
+
+            <div class="text">
+              <h3>Every Day is a New Challenge</h3>
+              <p>To develop a user-friendly interface I feel that these are the most Essential skills a Front-End
+                developer must need</p>
+
+              <button class="btn2 btn3">Hire Me</button>
+            </div>
+          </div>
+
+
+          <div class="right">
+            <!-- line skill bars-->
+            <div class="line_content">
+              <div class="line flex1">
+                <p>ReactJs</p>
+                <div class="bar">
+                  <div class="line_bar html"> </div>
+                </div>
+                <h5>85</h5>
+              </div>
+
+              <div class="line">
+                <p>TailwindCSS</p>
+                <div class="bar">
+                  <div class="line_bar css"></div>
+                </div>
+                <h5>75</h5>
+              </div>
+
+              <div class="line">
+                <p>WORDPRESS</p>
+                <div class="bar">
+                  <div class="line_bar photo"> </div>
+                </div>
+                <h5>65</h5>
+              </div>
+            </div>
+            <!-- line skill bars-->
+
+
+            <div class="skill-container flex1">
+              <div class="circle_box">
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 264px;"
+                    transform="translate(50,50) rotate(-90)"></circle>
+                  <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">80</text>
+                </svg>
+                <h4>HTML</h4>
+              </div>
+
+              <div class="circle_box">
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 214px;"
+                    transform="translate(50,50) rotate(-90)"></circle>
+                  <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
+                </svg>
+                <h4>CSS</h4>
+              </div>
+
+              <div class="circle_box">
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 224px;"
+                    transform="translate(50,50) rotate(-90)"></circle>
+                  <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">60</text>
+                </svg>
+                <h4>JAVSCRIPT</h4>
+              </div>
+
+              <!-- <div class="circle_box">
+                <svg class="skill-circle" height="150" width="150">
+                  <circle cx="-40" cy="10" r="48" style="stroke-dasharray: 244px;"
+                    transform="translate(50,50) rotate(-90)"></circle>
+                  <text id="text1" x="40" y="100" fill="#fff" font-family="Verdana" font-size="28">70</text>
+                </svg>
+                <h4>WORDPRESS </h4>
+              </div> -->
+            </div>
+          </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="logo">
+            <!-- <img src="image/logo.png" alt=""> -->
+          </div>
+
+          <div class="content grid">
+            <div class="box">
+              <h4>Solutions</h4>
+              <ul>
+                <li>Control</li>
+                <li>Scalability & Effciency</li>
+                <li>Supported by Experts</li>
+                <li>Performance & Security</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h4>Links</h4>
+              <ul>
+                <li onclick="window.location.reload(true)"><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#skills">My skills</a></li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h4>Resources</h4>
+              <ul>
+                <li>Case Studies</li>
+                <li>Blog</li>
+                <li>I'm a Clients</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h4>Company</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Newsroom</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <div class="text">
+                <span>+91-8267818161</span><br>
+                <label class="myemail">talhaansari692@gmail.com</label><br>
+                <p>bareilly,UP-234005,India</p>
+              </div>
+
+              <div class="icon flex1">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="legal flex1">
+            <div class="box">
+              <p>Copyright (c) 2023 Copyright Holder All Rights Reserved.</p>
+            </div>
+            <div class="box flex">
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </main>
+
+
+  </div>
+
+</body>
+
+</html>
